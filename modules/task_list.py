@@ -1,13 +1,7 @@
 from operator import truediv
 
 
-tasks = [
-    { "description": "Wash Dishes", "completed": False, "time_taken": 10 },
-    { "description": "Clean Windows", "completed": False, "time_taken": 15 },
-    { "description": "Make Dinner", "completed": True, "time_taken": 30 },
-    { "description": "Feed Cat", "completed": False, "time_taken": 5 },
-    { "description": "Walk Dog", "completed": True, "time_taken": 60 },
-]
+
 
 # Functions to complete:
 
@@ -63,10 +57,10 @@ def get_task_with_description(list, description):
 def get_tasks_by_status(list, status):
     task_status = []
     for task in list:
-        print("in for loop ")
+        #print("in for loop ")
         if task["completed"] == status:
             task_status.append(task)
-            print("in the if statement successfully")
+            # print("in the if statement successfully")
 
     return task_status
 
