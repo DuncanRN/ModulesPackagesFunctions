@@ -6,3 +6,7 @@ def search_input():
 
 def time_input():
     return int(input("Enter task duration: "))
+
+def import_input():
+    return input("Would you like to import the tasks? y/n: ")
+    

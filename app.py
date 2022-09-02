@@ -1,9 +1,19 @@
 from modules.task_list import *
 from modules.output import *
 from modules.input import *
-from data.task_list import *
 
+
+initial_run_through=True
 while (True):
+    if(initial_run_through):
+        import_task_list = import_input()
+        # input("Would you like to import the tasks? y/n: ")
+        if(import_task_list == "y"):
+            from data.task_list import *
+        else:
+            tasks = []
+        initial_run_through = False
+
     print_menu()
     option = menu_input()
     # input("Select an option 1, 2, 3, 4, 5, display (m)enu or (q)uit: ")
